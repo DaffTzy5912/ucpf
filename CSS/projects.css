@@ -1,0 +1,110 @@
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+.project-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 1;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(124, 58, 237, 0.05), rgba(16, 185, 129, 0.05));
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.project-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(124, 58, 237, 0.15);
+}
+.project-card:hover::before {
+    opacity: 1;
+}
+.project-img {
+    height: 220px;
+    width: 100%;
+    background-color: var(--gray-200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.project-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 50%);
+}
+.project-content {
+    padding: 2rem;
+}
+.project-content h3 {
+    margin-bottom: 0.8rem;
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.project-content p {
+    margin-bottom: 1.5rem;
+    color: var(--gray-800);
+    line-height: 1.7;
+}
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+    gap: 0.5rem;
+}
+.tag {
+    padding: 0.4rem 1rem;
+    background: linear-gradient(45deg, rgba(124, 58, 237, 0.1), rgba(139, 92, 246, 0.1));
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--primary);
+    transition: all 0.3s;
+}
+.tag:hover {
+    background: linear-gradient(45deg, rgba(124, 58, 237, 0.2), rgba(139, 92, 246, 0.2));
+    transform: translateY(-2px);
+}
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.project-link svg {
+    width: 16px;
+    height: 16px;
+    margin-left: 0.5rem;
+    transition: transform 0.3s;
+}
+.project-link:hover {
+    color: var(--accent);
+}
+.project-link:hover svg {
+    transform: translateX(5px);
+}
