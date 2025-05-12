@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <!-- Global Styles -->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
     <!-- Section-Specific Styles -->
-    <link rel="stylesheet" href="beranda.css">
-    <link rel="stylesheet" href="projects.css">
-    <link rel="stylesheet" href="musik.css">
+    <link rel="stylesheet" href="css/beranda.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/musik.css">
 </head>
 <body>
     <header>
@@ -25,12 +25,20 @@
     <main>
         <!-- Home Section -->
         <section id="home" class="active-section">
-            <div class="hero">
-                <h1>Selamat Datang di Portfolio Saya</h1>
-                <p>Saya adalah seorang developer yang bersemangat menciptakan hal-hal luar biasa dengan kode. Jelajahi proyek dan musik favorit saya.</p>
-                <a href="#projects" class="btn view-projects">Lihat Proyek Saya</a>
-            </div>
-        </section>
+    <div class="hero">
+        <div class="hero-decoration"></div>
+        <div class="hero-content">
+            <h1 data-text="Selamat Datang di Portfolio Saya">Selamat Datang di Portfolio Saya</h1>
+            <p>Saya adalah seorang developer yang bersemangat menciptakan hal-hal luar biasa dengan kode. Jelajahi proyek dan musik favorit saya.</p>
+            <a href="#projects" class="btn view-projects">Lihat Proyek Saya</a>
+        </div>
+        <div class="scroll-indicator">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M7.41,8.59L12,13.17l4.59-4.58L18,10l-6,6l-6-6L7.41,8.59z"/>
+            </svg>
+        </div>
+    </div>
+</section>
 
         <!-- Projects Section -->
         <section id="projects">
@@ -193,6 +201,6 @@
         </section>
     </main>
 
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
