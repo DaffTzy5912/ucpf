@@ -2,27 +2,14 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
+  <!-- Global Styles -->
   <link rel="stylesheet" href="main.css" />
+  <!-- Section-Specific Styles -->
   <link rel="stylesheet" href="beranda.css" />
   <link rel="stylesheet" href="projects.css" />
   <link rel="stylesheet" href="musik.css" />
-  <style>
-    body {
-      scroll-behavior: smooth;
-    }
-    section {
-      display: none;
-    }
-    section.active-section {
-      display: block;
-    }
-    .nav-link.active {
-      font-weight: bold;
-      text-decoration: underline;
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -61,28 +48,48 @@
         <p>Berikut beberapa proyek terbaik yang telah saya kerjakan.</p>
       </div>
       <div class="projects-grid">
+        <!-- Project 1 -->
         <div class="project-card">
-          <div class="project-img"><span>Image Placeholder</span></div>
+          <div class="project-img">
+            <span>Image Placeholder</span>
+          </div>
           <div class="project-content">
             <h3>E-Commerce Website</h3>
             <p>Platform belanja online dengan fitur pembayaran dan manajemen produk.</p>
-            <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
           </div>
         </div>
+        <!-- Project 2 -->
         <div class="project-card">
-          <div class="project-img"><span>Image Placeholder</span></div>
+          <div class="project-img">
+            <span>Image Placeholder</span>
+          </div>
           <div class="project-content">
             <h3>Aplikasi Mobile</h3>
             <p>Aplikasi manajemen tugas untuk meningkatkan produktivitas.</p>
-            <div class="project-tags"><span class="tag">React Native</span><span class="tag">Firebase</span></div>
+            <div class="project-tags">
+              <span class="tag">React Native</span>
+              <span class="tag">Firebase</span>
+            </div>
           </div>
         </div>
+        <!-- Project 3 -->
         <div class="project-card">
-          <div class="project-img"><span>Image Placeholder</span></div>
+          <div class="project-img">
+            <span>Image Placeholder</span>
+          </div>
           <div class="project-content">
             <h3>Portfolio Website</h3>
             <p>Website portfolio modern dengan animasi halus.</p>
-            <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
           </div>
         </div>
       </div>
@@ -95,71 +102,106 @@
         <p>Musik yang menginspirasi saya saat bekerja dan beristirahat.</p>
       </div>
       <div class="music-container">
+        <!-- Modern Music Player -->
         <div class="music-player">
+          <!-- Now Playing Area -->
           <div class="now-playing">
-            <div class="song-cover"><div class="song-cover-placeholder">Album Cover</div></div>
+            <div class="song-cover">
+              <div class="song-cover-placeholder">Album Cover</div>
+            </div>
             <div class="song-details">
               <h3>Bohemian Rhapsody</h3>
               <p>Queen - A Night at the Opera</p>
             </div>
             <div class="player-controls">
               <button class="control-btn" id="prev-btn">
-                <svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/>
+                </svg>
               </button>
               <button class="control-btn play-pause" id="play-btn">
-                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
               </button>
               <button class="control-btn" id="next-btn">
-                <svg viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>
+                </svg>
               </button>
             </div>
           </div>
+          <!-- Progress Bar -->
           <div class="progress-area">
             <span class="progress-time">0:00</span>
-            <div class="progress-bar"><div class="progress"></div></div>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
             <span class="progress-time">5:55</span>
           </div>
+          <!-- Playlist -->
           <div class="playlist">
+            <!-- Song 1 -->
             <div class="playlist-item active">
-              <div class="playlist-item-img"><span>Cover</span></div>
-              <div class="playlist-item-info"><h4>Bohemian Rhapsody</h4><p>Queen - A Night at the Opera</p></div>
+              <div class="playlist-item-img">
+                <span>Cover</span>
+              </div>
+              <div class="playlist-item-info">
+                <h4>Bohemian Rhapsody</h4>
+                <p>Queen - A Night at the Opera</p>
+              </div>
               <div class="playlist-item-duration">5:55</div>
             </div>
-            <div class="playlist-item"><div class="playlist-item-img"><span>Cover</span></div>
-              <div class="playlist-item-info"><h4>Imagine</h4><p>John Lennon - Imagine</p></div><div class="playlist-item-duration">3:04</div></div>
-            <div class="playlist-item"><div class="playlist-item-img"><span>Cover</span></div>
-              <div class="playlist-item-info"><h4>Hotel California</h4><p>Eagles - Hotel California</p></div><div class="playlist-item-duration">6:30</div></div>
-            <div class="playlist-item"><div class="playlist-item-img"><span>Cover</span></div>
-              <div class="playlist-item-info"><h4>Billie Jean</h4><p>Michael Jackson - Thriller</p></div><div class="playlist-item-duration">4:54</div></div>
-            <div class="playlist-item"><div class="playlist-item-img"><span>Cover</span></div>
-              <div class="playlist-item-info"><h4>Shape of You</h4><p>Ed Sheeran - ÷ (Divide)</p></div><div class="playlist-item-duration">3:53</div></div>
+            <!-- Song 2 -->
+            <div class="playlist-item">
+              <div class="playlist-item-img">
+                <span>Cover</span>
+              </div>
+              <div class="playlist-item-info">
+                <h4>Imagine</h4>
+                <p>John Lennon - Imagine</p>
+              </div>
+              <div class="playlist-item-duration">3:04</div>
+            </div>
+            <!-- Song 3 -->
+            <div class="playlist-item">
+              <div class="playlist-item-img">
+                <span>Cover</span>
+              </div>
+              <div class="playlist-item-info">
+                <h4>Hotel California</h4>
+                <p>Eagles - Hotel California</p>
+              </div>
+              <div class="playlist-item-duration">6:30</div>
+            </div>
+            <!-- Song 4 -->
+            <div class="playlist-item">
+              <div class="playlist-item-img">
+                <span>Cover</span>
+              </div>
+              <div class="playlist-item-info">
+                <h4>Billie Jean</h4>
+                <p>Michael Jackson - Thriller</p>
+              </div>
+              <div class="playlist-item-duration">4:54</div>
+            </div>
+            <!-- Song 5 -->
+            <div class="playlist-item">
+              <div class="playlist-item-img">
+                <span>Cover</span>
+              </div>
+              <div class="playlist-item-info">
+                <h4>Shape of You</h4>
+                <p>Ed Sheeran - ÷ (Divide)</p>
+              </div>
+              <div class="playlist-item-duration">3:53</div>
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <script>
-    const navLinks = document.querySelectorAll('.nav-link');
-    const sections = document.querySelectorAll('main > section');
-
-    navLinks.forEach(link => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-
-        navLinks.forEach(l => l.classList.remove('active'));
-        link.classList.add('active');
-
-        const targetId = link.getAttribute('data-section');
-
-        sections.forEach(section => {
-          section.classList.remove('active-section');
-          if (section.id === targetId) {
-            section.classList.add('active-section');
-          }
-        });
-      });
-    });
-  </script>
+  <script src="main.js"></script>
 </body>
 </html>
